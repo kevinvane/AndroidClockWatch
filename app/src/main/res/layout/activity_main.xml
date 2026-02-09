@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3e3e3e"
+    tools:context=".MainActivity">
+
+    <com.github.kevinvane.clocklib.ClockView
+        android:id="@+id/clockView"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.github.kevinvane.clocklib.ClockView
+        android:id="@+id/clockView2"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        app:clockFaceColor="#000000"
+        app:clockHandColor="#FFFFFF"
+        app:clockHourTickColor="#FFFFFF"
+        app:clockTextColor="#FFFFFF"
+        app:clockTickColor="#48484A"
+        app:clockSecondHandColor="#FF9500"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/clockView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
